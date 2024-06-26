@@ -5,21 +5,21 @@
 class DayOneToHugo < Formula
   desc "Converts Day One JSON exports to a Hugo site"
   homepage "https://day-one-to-hugo.lmika.dev/"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/lmika/day-one-to-hugo/releases/download/v0.1.1/day-one-to-hugo_0.1.1_darwin_amd64.tar.gz"
-      sha256 "9b9aabc27203219c3c04ea7a0ce1131361f60f85c2f5975819c1054d05c5ac24"
+      url "https://github.com/lmika/day-one-to-hugo/releases/download/v0.1.2/day-one-to-hugo_0.1.2_darwin_amd64.tar.gz"
+      sha256 "4278bfb21950d5354d1bb160a607dde54d01d2a9e8e1e859aeae74f28ad8ef1c"
 
       def install
         bin.install "day-one-to-hugo"
       end
     end
     on_arm do
-      url "https://github.com/lmika/day-one-to-hugo/releases/download/v0.1.1/day-one-to-hugo_0.1.1_darwin_arm64.tar.gz"
-      sha256 "0f25cf9febd3b0aa67f5c6bc2c10ce49f8a931686fd0168f88ef7426ea86d979"
+      url "https://github.com/lmika/day-one-to-hugo/releases/download/v0.1.2/day-one-to-hugo_0.1.2_darwin_arm64.tar.gz"
+      sha256 "b7297b062c7af1ed94dc3c10908e91506d0abe0fb5244c9bc6d392608d9bd82e"
 
       def install
         bin.install "day-one-to-hugo"
@@ -30,8 +30,18 @@ class DayOneToHugo < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lmika/day-one-to-hugo/releases/download/v0.1.1/day-one-to-hugo_0.1.1_linux_amd64.tar.gz"
-        sha256 "62672d04300170ff2de8b960c207d88e0b68d9fd50fc2eb62cb01495e171964f"
+        url "https://github.com/lmika/day-one-to-hugo/releases/download/v0.1.2/day-one-to-hugo_0.1.2_linux_amd64.tar.gz"
+        sha256 "379e6b47a5a1ef54a9ec58ac05e8ae007f050957e27e25035ec9eb2e64505c30"
+
+        def install
+          bin.install "day-one-to-hugo"
+        end
+      end
+    end
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/lmika/day-one-to-hugo/releases/download/v0.1.2/day-one-to-hugo_0.1.2_linux_arm64.tar.gz"
+        sha256 "d0a5c2400c154ccd156f76778d43e92796cb685be9529eddd1fcd122235fde69"
 
         def install
           bin.install "day-one-to-hugo"
