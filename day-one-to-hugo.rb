@@ -5,21 +5,21 @@
 class DayOneToHugo < Formula
   desc "Converts Day One JSON exports to a Hugo site"
   homepage "https://day-one-to-hugo.lmika.dev/"
-  version "0.1.2"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/lmika/day-one-to-hugo/releases/download/v0.1.2/day-one-to-hugo_0.1.2_darwin_amd64.tar.gz"
-      sha256 "4278bfb21950d5354d1bb160a607dde54d01d2a9e8e1e859aeae74f28ad8ef1c"
+      url "https://github.com/lmika/day-one-to-hugo/releases/download/v1.0.0/day-one-to-hugo_1.0.0_darwin_amd64.tar.gz"
+      sha256 "3d926006017da7c8f95e017ba3321bbc7cff5eca6c0f13f149fbde65f5a52a59"
 
       def install
         bin.install "day-one-to-hugo"
       end
     end
     on_arm do
-      url "https://github.com/lmika/day-one-to-hugo/releases/download/v0.1.2/day-one-to-hugo_0.1.2_darwin_arm64.tar.gz"
-      sha256 "b7297b062c7af1ed94dc3c10908e91506d0abe0fb5244c9bc6d392608d9bd82e"
+      url "https://github.com/lmika/day-one-to-hugo/releases/download/v1.0.0/day-one-to-hugo_1.0.0_darwin_arm64.tar.gz"
+      sha256 "10bc7afa416540364d8510200a8fa1aa38b3d57d60f649b2158ba92bbe5e130a"
 
       def install
         bin.install "day-one-to-hugo"
@@ -30,8 +30,8 @@ class DayOneToHugo < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lmika/day-one-to-hugo/releases/download/v0.1.2/day-one-to-hugo_0.1.2_linux_amd64.tar.gz"
-        sha256 "379e6b47a5a1ef54a9ec58ac05e8ae007f050957e27e25035ec9eb2e64505c30"
+        url "https://github.com/lmika/day-one-to-hugo/releases/download/v1.0.0/day-one-to-hugo_1.0.0_linux_amd64.tar.gz"
+        sha256 "f4e2b0a994b0c6d926a65b5b3a92af58ae80f965722df669644f8625cc664094"
 
         def install
           bin.install "day-one-to-hugo"
@@ -40,8 +40,8 @@ class DayOneToHugo < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lmika/day-one-to-hugo/releases/download/v0.1.2/day-one-to-hugo_0.1.2_linux_arm64.tar.gz"
-        sha256 "d0a5c2400c154ccd156f76778d43e92796cb685be9529eddd1fcd122235fde69"
+        url "https://github.com/lmika/day-one-to-hugo/releases/download/v1.0.0/day-one-to-hugo_1.0.0_linux_arm64.tar.gz"
+        sha256 "2b5bdb9170b376ce794bb273d4d114fdb4b0391c9057177de044689d2aab9267"
 
         def install
           bin.install "day-one-to-hugo"
